@@ -17,7 +17,13 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 5px;
+    min-height: 100px;
 }
+
+.navbar-brand {
+  font-size: 40px;
+}
+
 
 /*
 headeer top
