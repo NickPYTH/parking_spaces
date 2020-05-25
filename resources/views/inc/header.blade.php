@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<div class="fixed-top">
+<div class="">
   <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
     <div class="container">
       <a class="navbar-brand" rel="nofollow">PARKING SPACES   </a>

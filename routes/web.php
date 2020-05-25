@@ -19,4 +19,4 @@ Route::get('/', function () {
 })->name('home');
 
 
-#sRoute::get('/', 'ShowFrames@allData')->name('home');
+Route::get('/', 'ShowFrames@FramesFill')->name('home');

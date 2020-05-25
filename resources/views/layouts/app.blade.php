@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    @include('inc.header')
+    
 
 
   </body>
