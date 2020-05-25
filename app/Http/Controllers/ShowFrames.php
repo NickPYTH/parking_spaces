@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ShowFrames extends Controller
+class ShowFrames extends Controller #fdfd
 {
     public function FramesFill() {
 
