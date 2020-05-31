@@ -8,6 +8,8 @@ Home
 
 <div class="container">
 
-    @include('inc.frame')
+    @foreach ($data as $info)
+        @include('inc.frame', ['free_spaces' => $info, 'image_location' => $image_location])
+    @endforeach
 
 </div>
