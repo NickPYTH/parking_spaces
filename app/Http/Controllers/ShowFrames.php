@@ -5,14 +5,30 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ShowFrames extends Controller #fdfd
+class ShowFrames extends Controller
 {
     public function FramesFill() {
       
-        $f_json = '~/test/data_sector_1.json';
+        #$f_json = '~/test/data_sector_1.json';
 
-        $sector_1 = file_get_contents("$f_json");
-        $decode = json_decode($sector_1, true);
+        $filename = 'data.txt';
+        $text = 'Этот текст будет добавлен в файл' . PHP_EOL; // Перенос строки лучше делать константой PHP_EOL
+        $text2 = 'И этот тоже!';
+
+        // Открываем файл, флаг W означает - файл открыт на запись
+        $f_hdl = fopen($filename, 'w');
+
+        // Записываем в файл $text
+        fwrite($f_hdl, $text);
+
+        // и $text2
+        fwrite($f_hdl, $text2);
+
+        // Закрывает открытый файл
+        fclose($f_hdl);
+
+        #$sector_1 = file_get_contents("$f_json");
+        #$decode = json_decode($sector_1, true);
         
 
         $image_location = '~/test/parking.png';
