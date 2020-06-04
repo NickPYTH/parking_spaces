@@ -9,7 +9,7 @@ class ShowFrames extends Controller #fdfd
 {
     public function FramesFill() {
       
-        $f_json = '~/test/data_sector_1.json';
+        $f_json = 'data_sector_1.json';
 
         $sector_1 = file_get_contents("$f_json");
         $decode = json_decode($sector_1, true);

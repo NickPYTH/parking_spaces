@@ -1,0 +1,176 @@
+Already up to date.
+From https://github.com/NickPYTH/parking_spaces
+   aaa74e8..183bdf3  master     -> origin/master
+Updating aaa74e8..183bdf3
+Fast-forward
+ app/Http/Controllers/ShowFrames.php   |  12 +++++++++++-
+ public/css/app.css                    |   4 ++++
+ public/images/xxx.jpg                 | Bin 0 -> 24791 bytes
+ resources/sass/app.scss               |   4 ++++
+ resources/views/home.blade.php        |   8 ++++++++
+ resources/views/inc/frame.blade.php   |  10 ++++++++++
+ resources/views/inc/header.blade.php  |   2 +-
+ resources/views/layouts/app.blade.php |   2 +-
+ routes/web.php                        |   2 +-
+ 9 files changed, 40 insertions(+), 4 deletions(-)
+ create mode 100644 public/images/xxx.jpg
+ create mode 100644 resources/views/inc/frame.blade.php
+Already up to date.
+From https://github.com/NickPYTH/parking_spaces
+   183bdf3..3a1e0c3  master     -> origin/master
+Updating 183bdf3..3a1e0c3
+Fast-forward
+ app/Http/Controllers/ShowFrames.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Traceback (most recent call last):
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.6/http/client.py", line 1356, in getresponse
+    response.begin()
+  File "/usr/lib/python3.6/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.6/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.6/ssl.py", line 1012, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=15)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "auto-pull.py", line 12, in <module>
+    for commit in repo.get_commits():
+  File "/home/nick/.local/lib/python3.6/site-packages/github/PaginatedList.py", line 59, in __iter__
+    newElements = self._grow()
+  File "/home/nick/.local/lib/python3.6/site-packages/github/PaginatedList.py", line 71, in _grow
+    newElements = self._fetchNextPage()
+  File "/home/nick/.local/lib/python3.6/site-packages/github/PaginatedList.py", line 201, in _fetchNextPage
+    "GET", self.__nextUrl, parameters=self.__nextParams, headers=self.__headers
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 319, in requestJsonAndCheck
+    verb, url, parameters, headers, input, self.__customConnection(url)
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 410, in requestJson
+    return self.__requestEncode(cnx, verb, url, parameters, headers, input, encode)
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 472, in __requestEncode
+    cnx, verb, url, requestHeaders, encoded_input
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 498, in __requestRaw
+    response = cnx.getresponse()
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 116, in getresponse
+    allow_redirects=False,
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=15)
+Already up to date.
+From https://github.com/NickPYTH/parking_spaces
+   3a1e0c3..5b83056  master     -> origin/master
+Updating 3a1e0c3..5b83056
+Fast-forward
+ app/Http/Controllers/ShowFrames.php | 12 +++++++++++-
+ resources/views/home.blade.php      |  4 +++-
+ resources/views/inc/frame.blade.php |  4 ++--
+ routes/web.php                      |  4 ----
+ 4 files changed, 16 insertions(+), 8 deletions(-)
+Traceback (most recent call last):
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.6/http/client.py", line 1356, in getresponse
+    response.begin()
+  File "/usr/lib/python3.6/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.6/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.6/ssl.py", line 1012, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/nick/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=15)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "auto-pull.py", line 12, in <module>
+    for commit in repo.get_commits():
+  File "/home/nick/.local/lib/python3.6/site-packages/github/PaginatedList.py", line 59, in __iter__
+    newElements = self._grow()
+  File "/home/nick/.local/lib/python3.6/site-packages/github/PaginatedList.py", line 71, in _grow
+    newElements = self._fetchNextPage()
+  File "/home/nick/.local/lib/python3.6/site-packages/github/PaginatedList.py", line 201, in _fetchNextPage
+    "GET", self.__nextUrl, parameters=self.__nextParams, headers=self.__headers
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 319, in requestJsonAndCheck
+    verb, url, parameters, headers, input, self.__customConnection(url)
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 410, in requestJson
+    return self.__requestEncode(cnx, verb, url, parameters, headers, input, encode)
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 472, in __requestEncode
+    cnx, verb, url, requestHeaders, encoded_input
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 498, in __requestRaw
+    response = cnx.getresponse()
+  File "/home/nick/.local/lib/python3.6/site-packages/github/Requester.py", line 116, in getresponse
+    allow_redirects=False,
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nick/.local/lib/python3.6/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=15)
