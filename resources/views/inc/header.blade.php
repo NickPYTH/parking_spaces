@@ -10,11 +10,6 @@
 
         <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item active">
-            <a class="nav-link"> Доступные улицы
-            </a>
-          </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#">Университетская 3</a>
           </li>

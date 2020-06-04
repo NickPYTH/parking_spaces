@@ -178,3 +178,13 @@ li {
   height: 400px;
 }
 
+.nav-link {
+  font-size: 150%;
+  opacity: 100%;
+  color: white !important;
+}
+
+.show {
+  font-size: 27px;
+}
+
