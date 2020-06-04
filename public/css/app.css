@@ -178,8 +178,8 @@ li {
   height: 400px;
 }
 
-.nav-link {
-  font-size: 150%;
+.nav-text {
+  font-size: 30px;
   opacity: 100%;
   color: white !important;
 }

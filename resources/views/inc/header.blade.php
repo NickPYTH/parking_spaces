@@ -11,7 +11,7 @@
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Университетская 3</a>
+            <a class="nav-text" href="#">Университетская 3</a>
           </li>
         </ul>
       </div>
