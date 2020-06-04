@@ -1,6 +1,7 @@
 from github import Github
 import time
 import os
+import datetime
 
 g = Github("NickPYTH", "Kolia27062000")
 repo = g.get_repo('NickPYTH/parking_spaces')
@@ -15,11 +16,11 @@ while True:
     if num != i:  
         try:
             os.system ('git pull')
-            log_file.write(str(last_commit)+" pulled\n")
+            log_file.write("Last commit date: " + str(last_commit) + " Check date: "  + str(datetime.datetime.now())  + " pulled\n")
             num = i
         except Exception:
-            log_file.write(str(last_commit)+" not pulled, some error\n")
+            log_file.write("Last commit date: " + str(last_commit) + " Check date: " + str(datetime.datetime.now())  + " not pulled, some error\n")
     else:
-        log_file.write(str(last_commit)+" not pulled\n")
-    time.sleep(5)
+        log_file.write("Last commit date: " + str(last_commit) + " Check date: " + str(datetime.datetime.now())  + " not pulled\n")
+    time.sleep(10)
     log_file.close()
