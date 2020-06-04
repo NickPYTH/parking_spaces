@@ -179,12 +179,8 @@ li {
 }
 
 .nav-text {
+  text-decoration: none;
   font-size: 30px;
-  opacity: 100%;
-  color: white !important;
-}
-
-.show {
-  font-size: 27px;
+  color: white;
 }
 

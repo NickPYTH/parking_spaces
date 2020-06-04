@@ -1,20 +1,18 @@
 <!-- Navigation -->
-<div class="">
-  <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
-    <div class="container">
-      <a class="navbar-brand" rel="nofollow">PARKING SPACES   </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-        <ul class="navbar-nav ml-auto">
-
-          <li class="nav-item">
-            <a class="nav-text" href="#">Университетская 3</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<section class="pt-5 pb-5 bg-dark inner-header">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h1 class="mt-0 mb-3 text-white">Parking Spaces</h1>
+			<div class="breadcrumbs">
+				<p class="mb-0 text-white"><a class="text-white" href="#">Университетская 3</a>  /  <span class="text-success">О сервисе</span></p>
+			</div>
+		</div>
+	</div>
 </div>
+</section>

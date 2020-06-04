@@ -181,11 +181,7 @@ li {
 }
 
 .nav-text {
+  text-decoration: none;
   font-size: 30px;
-  opacity: 100%;
-  color: rgba(255,255,255,1) !important;
-}
-
-.show {
-  font-size: 27px;
+  color: rgba(255,255,255,1);
 }
