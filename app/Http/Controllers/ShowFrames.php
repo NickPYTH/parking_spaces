@@ -55,4 +55,17 @@ class ShowFrames extends Controller
         #return view('messages', ['data' => $contact->orderBy('id', 'asc')->skip(1)->get()]); #пропуск одной записи
         #return view('messages', ['data' => $contact->where('subject', '=', 'Subject')->get()]); # все записи где subject имеет 'Subject' (<>, =)
       }
+
+
+      
+      public function SectorOneInfo(){
+        $sector_1_json = 'data_sector_1.json';
+        $med = file_get_contents("$sector_1_json");
+        $sector_1_data = json_decode($med,true);
+        $data[0][0] = $sector_1_data["RECORD_"]["FREE_SPACES"];
+        $data[0][1] = $sector_1_data["RECORD_"]["DATA"];
+        $data[0][2] = $sector_1_data["RECORD_"]["TIME"];
+        $data[0][3] = 'images/sector_1_cropped.png';
+        return view('sector_info', ['data' => $data]);
+      }
 }
