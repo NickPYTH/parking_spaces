@@ -15,6 +15,7 @@ body {
   justify-content: space-between;
   padding: 5px;
   min-height: 100px;
+  background-color: #f0f0f0;
 }
 
 .navbar-brand {
@@ -178,7 +179,16 @@ li {
   height: 400px;
 }
 
-@media (max-width = 992px){
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 992px) {
 
 .nav-text {
   text-decoration: none;
@@ -195,7 +205,12 @@ li {
 }
 
 .navbar-collapse {
-  margin-left: 45%;
+  margin-left: 5%;
+  margin-right: 5%;
   font-size: 32px;
+}
+
+.dropdown-item {
+  font-size: 24px;
 }
 }
