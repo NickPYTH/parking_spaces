@@ -1,6 +1,3 @@
-.navbar-brand {
-margin-left: 50px;}
-=======
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -181,6 +178,8 @@ li {
   height: 400px;
 }
 
+@media (max-width = 992px){
+
 .nav-text {
   text-decoration: none;
   font-size: 30px;
@@ -196,9 +195,7 @@ li {
 }
 
 .navbar-collapse {
-font-size: 64px;
-margin-left: 5%;
-margin-right: 5%;}
-
-.dropdown-item {
-font-size: 56px;}
+  margin-left: 45%;
+  font-size: 32px;
+}
+}
