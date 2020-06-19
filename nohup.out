@@ -174,3 +174,40 @@ Traceback (most recent call last):
   File "/home/nick/.local/lib/python3.6/site-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=15)
+Already up to date.
+From https://github.com/NickPYTH/parking_spaces
+   a9fb801..b20d3da  master     -> origin/master
+Updating a9fb801..b20d3da
+Fast-forward
+ resources/views/inc/frame.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From https://github.com/NickPYTH/parking_spaces
+   b20d3da..b41923c  master     -> origin/master
+Updating b20d3da..b41923c
+Fast-forward
+ resources/views/inc/frame.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From https://github.com/NickPYTH/parking_spaces
+   b41923c..5f3f7c4  master     -> origin/master
+Updating b41923c..5f3f7c4
+Fast-forward
+ public/css/app.css                   | 12 ++++++++++++
+ resources/views/inc/header.blade.php |  2 +-
+ 2 files changed, 13 insertions(+), 1 deletion(-)
+From https://github.com/NickPYTH/parking_spaces
+   5f3f7c4..b4e7e3c  master     -> origin/master
+Updating 5f3f7c4..b4e7e3c
+Fast-forward
+ resources/views/layouts/app.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From https://github.com/NickPYTH/parking_spaces
+   b4e7e3c..7ddfeb4  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+	public/css/app.css
+	resources/sass/app.scss
+Please commit your changes or stash them before you merge.
+error: The following untracked working tree files would be overwritten by merge:
+	public/app.css
+Please move or remove them before you merge.
+Aborting
+Updating b4e7e3c..7ddfeb4
