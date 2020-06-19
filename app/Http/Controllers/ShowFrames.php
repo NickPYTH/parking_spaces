@@ -79,4 +79,12 @@ class ShowFrames extends Controller
         $data[0][3] = 'sector_2_cropped.png';
         return view('sector_info', ['data' => $data]);
       }
+
+      public function About(){
+        return view('about');
+      }
+
+      public function Ask(){
+        return view('ask');
+      }
 }
