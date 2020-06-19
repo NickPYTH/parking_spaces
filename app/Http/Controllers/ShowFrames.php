@@ -76,7 +76,7 @@ class ShowFrames extends Controller
         $data[0][0] = $sector_2_data["RECORD_"]["FREE_SPACES"];
         $data[0][1] = $sector_2_data["RECORD_"]["DATA"];
         $data[0][2] = $sector_2_data["RECORD_"]["TIME"];
-        $data[0][3] = 'sector_2_cropped.png';
+        $data[0][3] = 'sector_1_cropped.png';
         return view('sector_info', ['data' => $data]);
       }
 }
