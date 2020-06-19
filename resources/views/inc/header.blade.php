@@ -9,16 +9,16 @@
         <a class="nav-link" href="{{ url('/') }}">Главная <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">О сервисе</a>
+        <a class="nav-link" href="{{ url('/about') }}">О сервисе</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Секторы
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="{{ url('/sector_1') }}">Сектор 1</a>
           <a class="dropdown-item" href="{{ url('/sector_2') }}">Сектор 2</a>
-          <a class="dropdown-item" href="#">Не нашли ваш сектор?</a>
+          <a class="dropdown-item" href="{{ url('/ask') }}">Не нашли ваш сектор?</a>
         </div>
       </li>
     </ul>
