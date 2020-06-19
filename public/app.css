@@ -192,7 +192,7 @@ li {
 
 .nav-text {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
 }
 
@@ -202,15 +202,20 @@ li {
 
 .navbar-brand { 
   margin-left: 5%;
+  font-size: 64px;
 }
 
 .navbar-collapse {
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 32px;
+  font-size: 42px;
 }
 
 .dropdown-item {
+  font-size: 34px;
+}
+
+.text-muted {
   font-size: 24px;
 }
 }
