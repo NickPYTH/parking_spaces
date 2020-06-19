@@ -12,4 +12,6 @@ Home
         @include('inc.frame', ['data' => $info])
     @endforeach
 
+    
 </div>
+@include('inc.footer')

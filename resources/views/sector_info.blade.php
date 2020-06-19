@@ -13,3 +13,5 @@ Sector Information
     @endforeach
 
 </div>
+
+@include('inc.footer')

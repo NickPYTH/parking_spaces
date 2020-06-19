@@ -24,23 +24,23 @@ class ShowFrames extends Controller
                 $data[0][0] = $sector_2_free;
                 $data[0][1] = $sector_2_data["RECORD_"]["DATA"];
                 $data[0][2] = $sector_2_data["RECORD_"]["TIME"];
-                $data[0][3] = 'images/sector_2_cropped.png';
+                $data[0][3] = 'sector_2_cropped.png';
 
                 $data[1][0] = $sector_1_free;
                 $data[1][1] = $sector_1_data["RECORD_"]["DATA"];
                 $data[1][2] = $sector_1_data["RECORD_"]["TIME"];
-                $data[1][3] = 'images/sector_1_cropped.png';
+                $data[1][3] = 'sector_1_cropped.png';
         }       
         else {
                 $data[0][0] = $sector_1_free;
                 $data[0][1] = $sector_1_data["RECORD_"]["DATA"];
                 $data[0][2] = $sector_1_data["RECORD_"]["TIME"];
-                $data[0][3] = 'images/sector_1_cropped.png';
+                $data[0][3] = 'sector_1_cropped.png';
 
                 $data[1][0] = $sector_2_free;
                 $data[1][1] = $sector_2_data["RECORD_"]["DATA"];
                 $data[1][2] = $sector_2_data["RECORD_"]["TIME"];
-                $data[1][3] = 'images/sector_2_cropped.png';
+                $data[1][3] = 'sector_2_cropped.png';
         }
 
         $image_location = 1;
@@ -65,7 +65,18 @@ class ShowFrames extends Controller
         $data[0][0] = $sector_1_data["RECORD_"]["FREE_SPACES"];
         $data[0][1] = $sector_1_data["RECORD_"]["DATA"];
         $data[0][2] = $sector_1_data["RECORD_"]["TIME"];
-        $data[0][3] = 'images/sector_1_cropped.png';
+        $data[0][3] = 'sector_1_cropped.png';
+        return view('sector_info', ['data' => $data]);
+      }
+
+      public function SectorTwoInfo(){
+        $sector_2_json = 'data_sector_2.json';
+        $med = file_get_contents("$sector_2_json");
+        $sector_2_data = json_decode($med,true);
+        $data[0][0] = $sector_2_data["RECORD_"]["FREE_SPACES"];
+        $data[0][1] = $sector_2_data["RECORD_"]["DATA"];
+        $data[0][2] = $sector_2_data["RECORD_"]["TIME"];
+        $data[0][3] = 'sector_2_cropped.png';
         return view('sector_info', ['data' => $data]);
       }
 }

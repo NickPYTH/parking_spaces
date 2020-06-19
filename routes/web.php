@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'ShowFrames@FramesFill')->name('home');
 Route::get('/sector_1', 'ShowFrames@SectorOneInfo')->name('sector_one_info');
+Route::get('/sector_2', 'ShowFrames@SectorTwoInfo')->name('sector_two_info');
