@@ -4,7 +4,7 @@
   <div class="card-body">
     <p class="card-text">
     Колличество свободных мест: {{ $data[0] }}<br>
-    Д0та: {{ $data[1] }}<br>
+    Дата: {{ $data[1] }}<br>
     Время: {{ $data[2] }}<br>
     </p>
   </div>
